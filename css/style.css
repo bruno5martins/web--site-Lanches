@@ -19,7 +19,6 @@ body {
   max-width: 1600px;
   min-width: 200px;
   background-image: linear-gradient(45deg, black 62%, rgb(255, 183, 0) 10%);
- 
 }
 
 nav {
@@ -31,12 +30,30 @@ nav {
   border-radius: 0 20px 0 0;
   width: 190px;
   margin: 0;
+  animation-name: nav-bar-lanches;
   left: -200px;
   padding: 0;
   height: 100vh;
   position: fixed;
   transition-duration: 0.7s;
   z-index: 2;
+  animation-iteration-count: 1;
+  animation-duration: 4s;
+  animation-delay: 3s;
+}
+
+@keyframes nav-bar-lanches {
+  1% {
+    left: -200px;
+  }
+
+  50% {
+    left: 0px;
+  }
+
+  100% {
+    left: -200px;
+  }
 }
 
 .check {
@@ -51,6 +68,24 @@ nav {
   justify-content: center;
   z-index: 6;
   position: fixed;
+  animation-name: btn-menu;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-delay: 2s;
+}
+
+@keyframes btn-menu {
+  1% {
+    top: 0;
+  }
+
+  50% {
+    top: 10px;
+  }
+
+  100% {
+    top: 0;
+  }
 }
 
 .bx-food-menu {
@@ -95,11 +130,10 @@ nav {
   flex-direction: column;
   height: 100vh;
   align-items: center;
-  
 
   max-width: 100%;
 }
-main{
+main {
   max-width: 100%;
   width: 767px;
   height: auto;
@@ -119,7 +153,6 @@ main{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
 
 .nome-logo {
@@ -238,8 +271,12 @@ main{
   margin-left: 10px;
 }
 
-
-.main-lanches{
+.main-lanches {
   max-width: 100%;
-  width: 200px;
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+}
+p {
+  color: white;
 }
