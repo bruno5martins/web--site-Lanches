@@ -99,6 +99,8 @@ nav {
 }
 main{
   max-width: 100%;
+  width: 767px;
+  height: auto;
 }
 
 .container-logo-main {
@@ -173,7 +175,7 @@ main{
   height: 260px;
   display: flex;
   justify-content: space-around;
-  width: 100%;
+  max-width: 100%;
 }
 
 .previa {
