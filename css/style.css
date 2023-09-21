@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 
 * {
   list-style: none;
@@ -12,12 +12,13 @@ body {
   background-color: white;
   margin: 0;
   padding: 0;
-
   list-style: none;
   text-decoration: none;
   display: flex;
-  overflow-x: none;
-  width: 370px;
+  height: auto;
+  max-width: 1600px;
+  min-width: 200px;
+ 
 }
 
 nav {
@@ -48,6 +49,7 @@ nav {
   align-items: center;
   justify-content: center;
   z-index: 6;
+  position: fixed;
 }
 
 .bx-food-menu {
@@ -69,7 +71,6 @@ nav {
   align-items: center;
   width: 100%;
   justify-content: space-between;
- 
 }
 
 .sessao-btn-menu a {
@@ -89,32 +90,44 @@ nav {
 }
 
 .container-main {
-  height: 100vh;
-  width: 372px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: linear-gradient(45deg,  black 62%,  rgb(255, 183, 0) 10% );
+  background-image: linear-gradient(45deg, black 62%, rgb(255, 183, 0) 10%);
+
+  max-width: 100%;
+}
+main{
+  max-width: 100%;
 }
 
-.container-header-logo{
+.container-logo-main {
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.container-header-logo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 300px;
+  justify-content: center;
+
 }
 
-.nome-logo{
+.nome-logo {
   display: flex;
   flex-direction: column;
   text-align: center;
-
 }
 
 .nome-logo h1 {
   color: white;
   font-size: 80px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .nome-logo h2 {
@@ -123,81 +136,71 @@ nav {
   position: relative;
 }
 
-.nome-logo h2::before{
-  content: '';
+.nome-logo h2::before {
+  content: "";
   width: 110px;
   height: 5px;
   background-color: red;
-position: absolute;
-left: 00px;
-bottom: 11px;
+  position: absolute;
+  left: 00px;
+  bottom: 11px;
 }
-.nome-logo h2::after{
-  content: '';
+.nome-logo h2::after {
+  content: "";
   width: 110px;
   height: 5px;
   background-color: red;
-position: absolute;
-right: 0px;
-bottom: 11px;
+  position: absolute;
+  right: 0px;
+  bottom: 11px;
 }
 .nome-logo h3 {
   color: rgb(255, 0, 0);
-  filter: drop-shadow(0 0 10px );
-  font-family: 'Dancing Script', cursive;
+  filter: drop-shadow(0 0 10px);
+  font-family: "Dancing Script", cursive;
   font-size: 50px;
   transform: translateY(-40px);
-  
 }
 
-.container-header-logo img{
+.container-header-logo img {
   width: 370px;
   filter: drop-shadow(0 0px 15px rgb(229, 161, 3));
-  transition-duration: .3s;
+  transition-duration: 0.3s;
+  max-width: 100%;
 }
 
-
-
-
-.legenda-propaganda{
-  width: auto;
-  width: 367px;
+.legenda-propaganda {
   height: 260px;
   display: flex;
   justify-content: space-around;
+  width: 100%;
 }
 
-
-.previa{
+.previa {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: end;
+  width: 200px;
 }
 
-
-.previa h1{
+.previa h1 {
   color: rgb(255, 183, 0);
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   width: 250px;
   font-size: 25px;
   font-weight: bold;
-  filter: drop-shadow(0 0 4px );
+  filter: drop-shadow(0 0 4px);
 }
 
-.previa h3{
+.previa h3 {
   font-size: 15px;
   text-align: end;
-  width: 200px;
   color: white;
-  font-family: 'Courier New', Courier, monospace;
-
-
+  font-family: "Courier New", Courier, monospace;
 }
 
-
-
-.popularidade i{
+.popularidade i {
   color: yellow;
 }
 
@@ -206,30 +209,27 @@ bottom: 11px;
   justify-content: end;
   width: 120px;
   align-items: center;
-  
 }
 
-.redes-sociais i{
+.redes-sociais i {
   color: white;
   padding: 5px 0;
   font-size: 20px;
-
 }
 
-.redes-sociais{
+.redes-sociais {
   justify-content: center;
   display: flex;
   flex-direction: column;
 }
 
-.nota{
+.nota {
   background-color: rgb(255, 225, 0);
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 20px;
-  padding:5px  10px;
+  padding: 5px 10px;
   color: black;
   margin-left: 10px;
 }
-
