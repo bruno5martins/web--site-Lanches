@@ -15,10 +15,9 @@ body {
   list-style: none;
   text-decoration: none;
   display: flex;
-  height: auto;
   max-width: 1600px;
   min-width: 200px;
-  background-image: linear-gradient(45deg, black 62%, rgb(255, 183, 0) 10%);
+ background-color: #191307;
 }
 
 nav {
@@ -40,9 +39,10 @@ nav {
   animation-iteration-count: 1;
   animation-duration: 4s;
   animation-delay: 3s;
+  
 }
 
-@keyframes nav-bar-lanches {
+/* @keyframes nav-bar-lanches {
   1% {
     left: -200px;
   }
@@ -54,7 +54,7 @@ nav {
   100% {
     left: -200px;
   }
-}
+} */
 
 .check {
   width: 80px;
@@ -130,13 +130,15 @@ nav {
   flex-direction: column;
   height: 100vh;
   align-items: center;
+  background-image: linear-gradient(45deg, black 62%, rgb(255, 183, 0) 10%);
 
   max-width: 100%;
 }
 main {
   max-width: 100%;
   width: 767px;
-  height: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .container-logo-main {
@@ -152,19 +154,22 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .nome-logo {
   display: flex;
   flex-direction: column;
   text-align: center;
+  width: 100%;
+  max-width: 100%;
 }
 
 .nome-logo h1 {
   color: white;
   font-size: 80px;
   font-family: "Courier New", Courier, monospace;
+  
 }
 
 .nome-logo h2 {
@@ -207,10 +212,10 @@ main {
 }
 
 .legenda-propaganda {
-  height: 260px;
+  height: 40vh;
   display: flex;
   justify-content: space-around;
-  max-width: 100%;
+  width: 100%;
 }
 
 .previa {
@@ -219,6 +224,7 @@ main {
   justify-content: space-around;
   align-items: end;
   width: 200px;
+  margin-bottom: 50px;
 }
 
 .previa h1 {
@@ -271,12 +277,93 @@ main {
   margin-left: 10px;
 }
 
-.main-lanches {
-  max-width: 100%;
-  background-color: gray;
+.lanche-popularidade-nav{
+  width: 90%;
+  margin-top: 10px;
+
+}
+
+.lanche-popularidade-nav p{
+  color: white;
+  background-color: black;
+  width: 30px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  padding: 2px;
 }
-p {
+
+
+.img-lanche-nav img{
+  width: 200px;
+}
+
+
+
+.nav-lanches{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 30vh;
+  background-image: linear-gradient(45deg, black 62%, rgb(255, 183, 0) 10%);
+  border-radius: 20px;
+  border: 4px solid rgb(255, 225, 0);
+
+}
+
+.container-nav{
+  display: grid;
+  grid-auto-flow: column;
+  gap: 30px;
+  overflow-x: auto;
+  padding: 70px 20px;
+}
+
+.nome-sessao{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+}
+
+
+.nome-sessao h1{
   color: white;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.descricao-produto-nav{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 10px;
+  text-align: center;
+
+}
+
+.descricao-produto-nav h1{
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.descricao-produto-nav p{
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 17px;
+}
+
+.descricao-produto-nav a{
+  color: rgb(0, 0, 0);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 17px;
+  font-weight: bold;
+  background-color: rgb(255, 225, 0);
+  width: 100%;
+  border-radius: 20px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
